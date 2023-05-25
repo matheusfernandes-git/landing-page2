@@ -28,6 +28,12 @@ ul li{
     margin: 20px 0;
 }
 
+.text button{
+    color: #fff;
+    background-color: #60C1E1;
+    font-weight: bold;
+}
+
 li a:hover{
     background-color: var(--primary-color);
     padding: 10px;
@@ -99,9 +105,6 @@ li a:hover{
 }
 
 @media(min-width: 992px){
-    .container-style{
-        
-    }
 
     .circle{
         position: absolute;
