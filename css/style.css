@@ -3,8 +3,12 @@
     margin: 0;
 }
 
-.containerr{
-    padding: 50px;
+:root{
+    --primary-color: #60C1E1
+}
+
+ul li{
+    font-size: 20px;
 }
 
 .text h2{
@@ -13,25 +17,27 @@
 
 .text span{
     font-size: 1.6em;
-    color: #60C1E1;
+    color: var(--primary-color);
 }
 
 .text p{
     margin: 20px 0;
 }
 
-ul li{
-    font-size: 20px;
-}
+li a:hover{
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+} 
 
 @media(max-width: 575px){
+    .circle{
+        max-width: 400px;
+    }
+
     .text h2{
         font-size: 3em;
     }
-
-    /* .container-img{
-        margin-top: 50px;
-    } */
 
     .container-img img{
         width: 450px;
@@ -39,6 +45,10 @@ ul li{
 }
 
 @media(min-width:575px) and (max-width: 768px){
+    .circle{
+        max-width: 500px;
+    }
+
     .text h2{
         font-size: 3.2em;
     }
@@ -50,19 +60,19 @@ ul li{
 
 .circle{
     position: absolute;
-    background-color: #60C1E1;
+    background-color: var(--primary-color);
     top: 0;
     right: 0;
     height: 100%;
-    width: 100%;
+    width: 1200px;
     clip-path: circle(50% at bottom right);
 }
 
-/* @media(max-width:1200px){
+@media(min-width: 768px) and (max-width: 992px){
     .circle{
-        bottom: 0;
+        width: 950px;
     }
-} */
+}
 
 .text{
     flex-basis: 60%;
