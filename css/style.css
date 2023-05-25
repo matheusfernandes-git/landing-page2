@@ -54,7 +54,7 @@ ul li{
     top: 0;
     right: 0;
     height: 100%;
-    width: 700px;
+    width: 100%;
     clip-path: circle(50% at bottom right);
 }
 
