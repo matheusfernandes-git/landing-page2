@@ -34,6 +34,12 @@ ul li{
     font-weight: bold;
 }
 
+.text button:hover{
+    opacity: 0.9;
+    background-color: #60C1E1;
+    color: #fff;
+}
+
 li a:hover{
     background-color: var(--primary-color);
     padding: 10px;
