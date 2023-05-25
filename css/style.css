@@ -35,20 +35,35 @@ li a:hover{
 } 
 
 @media(max-width: 575px){
-    .container-style{
-        box-shadow: none;
-    }
 
     .circle{
-        max-width: 400px;
+        position: absolute;
+        background-color: var(--primary-color);
+        top: 0;
+        right: 0px;
+        height: 100%;
+        width: 1200px;
+        clip-path: circle(29% at bottom right);
+    }
+
+    .text{
+        text-align: center;
     }
 
     .text h2{
-        font-size: 3em;
+        font-size: 2.8em;
+    }
+
+    .text span{
+        font-size: 1.3em;
+    }
+
+    .text p{
+        font-size: 14px;
     }
 
     .container-img img{
-        width: 450px;
+        width: 100%;
     }
 }
 
@@ -66,19 +81,16 @@ li a:hover{
     }
 }
 
-.circle{
-    position: absolute;
-    background-color: var(--primary-color);
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 1200px;
-    clip-path: circle(50% at bottom right);
-}
 
-@media(min-width: 768px) and (max-width: 992px){
+@media(min-width:575px){
     .circle{
+        position: absolute;
+        background-color: var(--primary-color);
+        top: 0;
+        right: 0px;
+        height: 100%;
         width: 950px;
+        clip-path: circle(50% at bottom right);
     }
 }
 
@@ -86,3 +98,19 @@ li a:hover{
     flex-basis: 60%;
 }
 
+@media(min-width: 992px){
+    .container-style{
+        
+    }
+
+    .circle{
+        position: absolute;
+        background-color: var(--primary-color);
+        top: 0;
+        right: 0px;
+        height: 100%;
+        width: 1100px;
+        clip-path: circle(50% at bottom right);
+        border-radius: 0px 0px 10px;
+    }
+}
